@@ -1,0 +1,18 @@
+<ion-app>
+  <ion-content class="ion-padding">
+    <div>Test</div>
+
+    <ion-grid>
+      <div *ngFor="let e of count">
+        <ion-row
+          style="width: 150px; background: red; margin: 2px"
+          (click)="tabbed(e)"
+        >
+          <ion-col>
+            <ion-input readonly="true"> {{ e }} </ion-input>
+          </ion-col>
+        </ion-row>
+      </div>
+    </ion-grid>
+  </ion-content>
+</ion-app>
